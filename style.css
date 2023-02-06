@@ -2868,6 +2868,7 @@ p {
 }
 
 .hero-section {
+	background-color: #7f5d9c;
 	background-image: url('img/home-mobile.png');
 	height: 80vh;
 	background-size: cover;
