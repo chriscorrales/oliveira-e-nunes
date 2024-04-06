@@ -1,0 +1,43 @@
+:root {
+  --white: #FFF;
+  --light-purple: #7E6392;
+  --dark-purple: #3D1C5E;
+  --light-green: #B1DEC0;
+  --gradient-dark-purple: linear-gradient(90deg, var(--dark-purple) -1.87%, var(--light-purple) 100%);
+  --gradient-light-white: linear-gradient(180deg, var(--light-purple) 0%, var(--white) 100%);
+  --gradient-dark-white: linear-gradient(180deg, var(--dark-purple) 0%, var(--white) 100%);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Fira Sans Bold */
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
