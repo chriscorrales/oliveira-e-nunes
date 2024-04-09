@@ -1,13 +1,12 @@
 @import 'start.css';
-@import 'colors.css';
+@import 'theme.css';
 @import 'components.css';
 
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--dark-purple);
+  background-color: var(--medium-purple);
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125rem;
   color: var(--white);
   min-height: 100vh;
 }
@@ -108,6 +107,7 @@ body {
 
 .section-numbers {
   display: flex;
+  background: url(../assets/background-2.png), linear-gradient(270deg, #3D1C5E 0%, #26123B 100%);
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
@@ -138,7 +138,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100%;
 }
 
 
@@ -150,13 +150,14 @@ body {
 }
 
 .section-number-statistics-container img {
-  width: 28%;
+  width: 22%;
+  margin-right: 32px;
 }
 
 .section-number-statistics-container-text {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 78%;
 }
 
 .section-number-statistics-container-text h3 {
@@ -165,6 +166,73 @@ body {
 
 .section-number-statistics-container-text p {
   font-size: 1.5rem;
+}
+
+.section-compromise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 104px 12%;
+  background-color: var(--white);
+}
+
+
+.section-compromise h2 {
+  color: var(--light-purple);
+  font-size: 4rem;
+}
+
+.section-compromise-cards {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.section-compromise-single-card {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 392px;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 40px 32px;
+  background-color: var(--medium-purple);
+}
+
+.section-compromise-single-card h3 {
+  color: var(--light-green);
+  font-size: 1.8rem;
+  margin-top: 24px;
+  width: 250px;
+}
+
+.section-compromise-single-card p {
+  font-size: 1.25rem;
+  margin-top: 24px;
+}
+
+.section-about-us {
+  display: flex;
+  padding: 104px 12%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-about-us h2 {
+  font-size: 3rem;
+  margin-top: 24px;
+}
+
+.aside-faq {
+  display: flex;
+  padding: 104px 12%;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo {
