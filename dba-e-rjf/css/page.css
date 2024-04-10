@@ -228,6 +228,12 @@ body {
   margin-top: 24px;
 }
 
+.section-about-us-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .aside-faq {
   display: flex;
   padding: 104px 12%;
