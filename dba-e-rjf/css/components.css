@@ -78,6 +78,7 @@
 
 .container-about-us-photo-matheus:hover {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../assets/Matheus.png') center center / cover no-repeat;
+  border: 0.5px solid #FFFFFF;
 }
 
 .container-about-us-photo-matheus:hover > ul {
@@ -92,6 +93,7 @@
 
 .container-about-us-photo-giovanna:hover {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('../assets/Giovanna.png') center center / cover no-repeat;
+  border: 0.5px solid #FFFFFF;
 }
 
 .container-about-us-photo-giovanna:hover > ul {
@@ -123,4 +125,129 @@
 
 .container-about-us ul li img {
   margin-right: 16px;
+}
+
+
+.aside-faq-question-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  border-radius: 8px;
+  width: 500px;
+  flex-flow: wrap row;
+}
+
+.aside-faq-question-container.inactive {
+  background-color: var(--dark-purple);
+}
+
+.aside-faq-question-container.active {
+  background-color: var(--white);
+  border: 1px solid var(--dark-purple);
+  border-radius: 8px;
+}
+
+.aside-faq-question-container.active h3 {
+  color: #666666
+}
+
+.aside-faq-question-container.active p {
+  color: var(--neuter-90)
+}
+
+
+.aside-faq-question-container h3 {
+  font-size: 1.5;
+  line-height: 110%;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.aside-faq-icon {
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  background-color: var(--white);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-faq-question-container.active .aside-faq-icon {
+  background-color: var(--dark-purple);
+}
+
+.aside-faq-question-container.inactive .aside-faq-icon {
+  background-color: var(--white);
+}
+
+
+.collapse-icon{
+  position: relative;
+}
+
+.collapse-icon .acc-close{
+  height: 20px;
+  border-left: 2px solid var(--dark-purple);
+  transition: all .5s ease-in-out;
+  transform: rotate(-90deg);
+  opacity: 1;
+}
+
+.aside-faq-question-container.active .collapse-icon .acc-close {
+  border-top: 2px solid var(--white);
+}
+
+.aside-faq-question-container.inactive .collapse-icon .acc-close {
+  border-top: 2px solid var(--dark-purple);
+}
+
+.collapse-icon .acc-open {
+  width: 19px;
+  position: absolute;
+  border-top: 2px solid var(--dark-purple);
+  transition: all .5s ease-in-out;
+  transform: rotate(90deg);
+  top: 43%;
+  right: -8px;
+}
+
+.aside-faq-question-container.active .collapse-icon .acc-open {
+  border-top: 2px solid var(--white);
+}
+
+.aside-faq-question-container.inactive .collapse-icon .acc-open {
+  border-top: 2px solid var(--dark-purple);
+}
+
+
+.aside-faq-question-container.active .collapse-icon{
+  transition: all .5s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.aside-faq-question-container.inactive .collapse-icon{
+  transition: all .5s ease-in-out;
+  transform: rotate(-180deg);
+}
+
+.aside-faq-question-container.active .collapse-icon .acc-open{
+  opacity: 0;
+}
+
+.desWrapper {
+  max-height: 500px;
+  display: none;
+  transition: max-height 1s ease-in;
+}
+
+.desWrapper.active {
+  background-color: var(--white);
+}
+
+.desWrapper.inactive {
+  background-color: var(--dark-purple);
 }
