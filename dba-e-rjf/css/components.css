@@ -127,12 +127,25 @@
   margin-right: 16px;
 }
 
+.container-two-columns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.container-all-question {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
 
 .aside-faq-question-container {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 40px;
   padding: 16px;
   border-radius: 8px;
   width: 500px;
@@ -159,6 +172,7 @@
 
 
 .aside-faq-question-container h3 {
+  width: 90%;
   font-size: 1.5;
   line-height: 110%;
   font-weight: 700;
@@ -191,24 +205,22 @@
 
 .collapse-icon .acc-close{
   height: 20px;
-  border-left: 2px solid var(--dark-purple);
   transition: all .5s ease-in-out;
   transform: rotate(-90deg);
   opacity: 1;
 }
 
 .aside-faq-question-container.active .collapse-icon .acc-close {
-  border-top: 2px solid var(--white);
+  border-left: 2px solid var(--white);
 }
 
 .aside-faq-question-container.inactive .collapse-icon .acc-close {
-  border-top: 2px solid var(--dark-purple);
+  border-left: 2px solid var(--dark-purple);
 }
 
 .collapse-icon .acc-open {
   width: 19px;
   position: absolute;
-  border-top: 2px solid var(--dark-purple);
   transition: all .5s ease-in-out;
   transform: rotate(90deg);
   top: 43%;
