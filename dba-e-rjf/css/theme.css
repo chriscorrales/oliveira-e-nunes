@@ -11,13 +11,15 @@
   --gradient-light-white: linear-gradient(180deg, var(--light-purple) 0%, var(--white) 100%);
   --gradient-dark-white: linear-gradient(180deg, var(--dark-purple) 0%, var(--white) 100%);
 
-  --regular-24: 1.333rem;
-  --title-64: 3.556rem;
-  --text-28: 1.556
-}
-
-html {
-  font-size: 16px;
+  --size-64: 3.75rem; /* 4rem */
+  --size-56: 3.25rem; /* 3.5rem */
+  --size-48: 2.75rem; /* 3rem */
+  --size-40: 2.25rem; /* 2.5rem */
+  --size-32: 1.75rem; /* 2rem */
+  --size-28: 1.5rem; /* 1.75rem */
+  --size-24: 1.25rem; /* 1.5rem */
+  --size-20: 1rem; /* 1.25rem */
+  --size-16: 0.75rem; /* 1rem */
 }
 
 @font-face {
