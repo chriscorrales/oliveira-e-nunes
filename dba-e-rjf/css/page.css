@@ -267,27 +267,38 @@ body {
   align-items: center;
   background: url(../assets/background-2.png), #000000;
   background-blend-mode: luminosity, normal;
-  gap: 24px;
+  gap: 70px;
 }
 
-.footer-area h2 {
+.footer-area .footer-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-area .footer-text h2 {
   color: var(--light-green);
   font-size: var(--size-48);
+  line-height: 110%;
   text-align: center;
+}
+
+.footer-area .footer-social {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-area .subtitle {
+  font-size: var(--size-28);
 }
 
 .footer-area .copyright {
   color: #4D4D4D;
   text-align: center;
-}
-
-.footer-area .privacy-terms {
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
-  text-align: center;
-
-  color: #999999;
 }
 
 .social-media {

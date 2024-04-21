@@ -5,6 +5,10 @@
   order: 1;
 }
 
+.small-space-top {
+  margin-top: 32px;
+}
+
 .medium-space-top {
   margin-top: 70px;
 }
