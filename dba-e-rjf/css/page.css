@@ -15,19 +15,21 @@ body {
   background: linear-gradient(243.62deg,
       rgba(61, 28, 94, 0) 27.53%, #26123B 74.44%),
     url('../assets/banner.png') center center / cover no-repeat;
-  height: 100vh;
+  max-height: 95vh;
   gap: 72px;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
+  padding: 104px 11%;
 }
 
 .header-text-container {
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  width: 60%;
+  gap: 16px;
+  width: 70%;
 }
 
 
@@ -45,7 +47,6 @@ body {
 }
 
 .header-text-container p {
-  margin-top: 16px;
   font-size: var(--size-28);
 }
 
@@ -98,6 +99,7 @@ body {
 .section-services-text h2 {
   font-size: var(--size-64);
   color: var(--light-purple);
+  line-height: 110%;
 }
 
 .section-services-text p {
@@ -197,7 +199,7 @@ body {
 .section-compromise-single-card {
   display: flex;
   flex-flow: column nowrap;
-  width: 370px;
+  width: 31%;
   height: 392px;
   align-items: center;
   justify-content: flex-start;
@@ -327,4 +329,47 @@ body {
 .logo {
   width: 282px;
   height: 116px;
+}
+
+@media screen and (max-width: 1235px) {
+  .section-services, .section-numbers, .section-about-us, .section-compromise, .aside-faq, .footer-area, .header-container {
+    padding: 104px 8%;
+  }
+
+  .header-container {
+    max-height: 110vh;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .section-services, .section-numbers, .section-about-us, .section-compromise, .aside-faq, .footer-area, .header-container {
+    padding: 80px 8%;
+  }
+
+  .section-number-statistics, .section-compromise-cards{
+    justify-content: center;
+  }
+
+  .section-services-row, .section-services-row-reverse {
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 32px 0;
+  }
+
+  .section-compromise-cards, .section-about-us-cards {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-compromise-cards .section-compromise-single-card, .container-about-us {
+    width: 70%;
+    height: auto;
+  }
+
+  .section-services-text, .section-services-image {
+    width: 100%;
+  }
 }
