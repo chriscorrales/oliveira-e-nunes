@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  height: 100%;
   align-items: flex-start;
   padding: 104px 11%;
 }
@@ -334,20 +335,26 @@ body {
 @media screen and (max-width: 1235px) {
   .section-services, .section-numbers, .section-about-us, .section-compromise, .aside-faq, .footer-area, .header-container {
     padding: 104px 8%;
+    gap: 32px;
   }
 
-  .header-container {
-    max-height: 110vh;
+  .header-logo-container {
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 1150px) {
   .section-services, .section-numbers, .section-about-us, .section-compromise, .aside-faq, .footer-area, .header-container {
     padding: 80px 8%;
+    gap: 32px;
   }
 
   .section-number-statistics, .section-compromise-cards{
     justify-content: center;
+  }
+
+  .header-logo-container {
+    width: 200px;
   }
 
   .section-services-row, .section-services-row-reverse {
