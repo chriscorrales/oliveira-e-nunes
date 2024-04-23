@@ -238,6 +238,14 @@
   flex-flow: wrap row;
 }
 
+.aside-faq-question-container .aside-faq-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+}
+
 .aside-faq-question-container.inactive {
   background-color: var(--dark-purple);
 }
@@ -355,4 +363,13 @@ summary::-webkit-details-marker {
 
 .desWrapper.inactive {
   background-color: var(--dark-purple);
+}
+
+@media screen and (max-width: 950px) {
+  .aside-faq-question-container {
+    width: 100%;
+    flex-flow: column nowrap;
+  }
+
+  .
 }

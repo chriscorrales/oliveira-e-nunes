@@ -305,6 +305,7 @@ body {
 
 .footer-area .subtitle {
   font-size: var(--size-28);
+  text-align: center;
 }
 
 .footer-area .copyright {
@@ -431,8 +432,32 @@ body {
   }
 
   .section-compromise-cards .section-compromise-single-card, .container-about-us {
-    width: 70%;
+    width: 100%;
     height: auto;
+  }
+
+  .section-number-statistics-container {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+.section-number-statistics-container-text {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.section-number-statistics-container-text h3 {
+  font-size: var(--size-56);
+  line-height: 110%;
+  text-align: center;
+}
+
+  .container-about-us {
+    width: 100%;
   }
 
   .section-services-text, .section-services-image {
