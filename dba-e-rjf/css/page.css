@@ -385,6 +385,10 @@ body {
     gap: 32px;
   }
 
+  .container-about-us p {
+    width: 100%;
+  }
+
   .header-container {
     padding: 56px 5% 80px;
     gap: 32px;

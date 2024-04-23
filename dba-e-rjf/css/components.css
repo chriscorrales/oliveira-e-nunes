@@ -175,7 +175,7 @@
 .container-about-us-photo-giovanna {
   width: 100%;
   height: 459px;
-  background: url('../assets/Giovanna.png') center center / cover no-repeat;;
+  background: url('../assets/Giovanna.png') center center / cover no-repeat;
 }
 
 .container-about-us-photo-giovanna:hover {
@@ -370,6 +370,4 @@ summary::-webkit-details-marker {
     width: 100%;
     flex-flow: column nowrap;
   }
-
-  .
 }
